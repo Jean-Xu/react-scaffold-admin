@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 react+typescript的基础后台脚手架  
 （此项目用于学习分享 欢迎大家提建议，邮箱：**mrfront@163.com**）  
 路由: react-router-dom v5  
