@@ -1,0 +1,49 @@
+{
+  "errorCode": 0,
+  "message": "\u670d\u52a1\u533a\u4fe1\u606f\u67e5\u8be2\u6210\u529f",
+  "data": {
+    "id": "45",
+    "area_name": "\u8bb8-\u5929\u6d25\u6d4b\u8bd5\u670d\u52a1\u533a",
+    "province": "120000",
+    "city": "120100",
+    "expressway": "\u5b81\u6caa\u9ad8\u901f,\u57ce\u9633\u9ad8\u901f",
+    "type": "2",
+    "ad_number": null,
+    "public_number": null,
+    "status": "1",
+    "created_at": "2020-03-17 10:47:03",
+    "operator_id": null,
+    "qu": null,
+    "address": "\u5929\u6d25\u5929\u6d25\u5e02",
+    "abbreviation": "TianJingFW",
+    "introduction": "\u7ee7\u80af\u5fb7\u57fa\u7b7e\u7ea6\u8fdb\u9a7b\u5929\u6d25\u6d4b\u8bd5\u670d\u52a1\u533a\u5f00\u59cb\u88c5\u4fee\u540e\uff0c\u661f\u5df4\u514b\u4e5f\u6b63\u5f0f\u52a0\u5165\u5929\u6d25\u6d4b\u8bd5\u670d\u52a1\u533a\uff0c\u8fd9\u5728\u5929\u6d25\u9ad8\u901f\u670d\u52a1\u533a\u4e2d\u5e76\u4e0d\u591a\u89c1\uff0c\u5929\u6d25\u6d4b\u8bd5\u670d\u52a1\u533a\u66f4\u662f\u82cf\u4e2d\u82cf\u5317\u9ad8\u901f\u670d\u52a1\u533a\u9996\u5bb6\u5347\u7ea7\u6362\u6321\u7684\u9ad8\u901f\u670d\u52a1\u533a",
+    "creator_id": "10",
+    "company3_id": null,
+    "company4_id": null,
+    "ascription_id": null,
+    "ascription_operator": null,
+    "lon": "116.986083",
+    "lat": "39.030225",
+    "level": "10",
+    "details": [
+      {
+        "id": "49",
+        "servicearea_id": "45",
+        "direction": "s",
+        "img": "upload\/5e703a7a9b28b.jpg",
+        "status": "1",
+        "site_numb": "30",
+        "mark": "https:\/\/exmiroserver.mirrormedia.cn\/gsh5\/intro.html?mark=12_TianJingFW_s_0049"
+      },
+      {
+        "id": "50",
+        "servicearea_id": "45",
+        "direction": "n",
+        "img": "upload\/5e703a7a4359c.jpeg",
+        "status": "1",
+        "site_numb": "30",
+        "mark": "https:\/\/exmiroserver.mirrormedia.cn\/gsh5\/intro.html?mark=12_TianJingFW_n_0050"
+      }
+    ]
+  }
+}

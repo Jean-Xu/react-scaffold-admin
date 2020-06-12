@@ -1,0 +1,13 @@
+// -------------------------------------------------------
+// 字体图标平滑
+// -------------------------------------------------------
+
+@mixin font-smoothing() {
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

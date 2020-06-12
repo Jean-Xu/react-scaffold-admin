@@ -1,0 +1,11 @@
+// -------------------------------------------------------
+// 段落省略号 (webkit)
+// -------------------------------------------------------
+
+@mixin phase-ellipsis($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line; // 控制段落显示几行
+}

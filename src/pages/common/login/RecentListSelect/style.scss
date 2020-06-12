@@ -1,0 +1,94 @@
+// -------------------------------------------------------
+// 最近登录账号列表
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.rc-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 40px;
+  cursor: pointer;
+
+  .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -7px 0 0 -7px;
+    font-size: 14px;
+    color: #8c8c8c;
+    transition: $transition-normal;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover {
+    .icon {
+      color: $text-dark;
+    }
+  }
+}
+
+.rc-list {
+  $_item-height: 36px;
+  $_padding-y: 4px;
+  $_icon-close-size: 14px;
+
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 5;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  @include shadow(0.65, 3);
+
+  .inner {
+    padding: $_padding-y 0;
+  }
+
+  .item {
+    position: relative;
+    height: $_item-height;
+    padding: 0 25px 0 13px;
+    font-size: 14px;
+    line-height: $_item-height;
+    cursor: pointer;
+
+    .del {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      width: 18px;
+      height: 18px;
+      font-size: $_icon-close-size;
+      color: rgba($text-gray, .85);
+      text-align: center;
+      transform: translateY(-50%);
+      transition: $transition-normal;
+
+      .icon-close {
+        vertical-align: top;
+        margin-top: (18px - $_icon-close-size) / 2;
+      }
+
+      &:hover {
+        color: $text-dark;
+      }
+    }
+
+    &:hover {
+      background: #f5f5f5;
+    }
+
+    &.selected {
+      background: #f4f0ff;
+    }
+  }
+}

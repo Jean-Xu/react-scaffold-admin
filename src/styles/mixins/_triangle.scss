@@ -1,0 +1,43 @@
+// -------------------------------------------------------
+// 设置border三角形
+// -------------------------------------------------------
+
+@mixin triangle-top($color: #555, $width1: 4px, $width2: 5px) {
+  display: inline-block;
+  vertical-align: top;
+  width: 0;
+  height: 0;
+  border-left: $width1 solid transparent;
+  border-right: $width1 solid transparent;
+  border-bottom: $width2 solid $color;
+}
+
+@mixin triangle-down($color: #555, $width1: 4px, $width2: 5px) {
+  display: inline-block;
+  vertical-align: top;
+  width: 0;
+  height: 0;
+  border-left: $width1 solid transparent;
+  border-right: $width1 solid transparent;
+  border-top: $width2 solid $color;
+}
+
+@mixin triangle-left($color: #555, $width1: 4px, $width2: 5px) {
+  display: inline-block;
+  vertical-align: top;
+  width: 0;
+  height: 0;
+  border-top: $width1 solid transparent;
+  border-bottom: $width1 solid transparent;
+  border-right: $width2 solid $color;
+}
+
+@mixin triangle-right($color: #555, $width1: 4px, $width2: 5px) {
+  display: inline-block;
+  vertical-align: top;
+  width: 0;
+  height: 0;
+  border-top: $width1 solid transparent;
+  border-bottom: $width1 solid transparent;
+  border-left: $width2 solid $color;
+}

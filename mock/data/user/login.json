@@ -1,0 +1,16 @@
+{
+  "errorCode": 0,
+  "data": {
+    "created_at": "2020-06-01 08:30:16",
+    "identity": 1,
+    "jurisdictionid": "10101,10102,10201,10202,10300,10401,10402,10700,10800,10900,10500,10601,10602,11000,11101,11102",
+    "last_login_address": "上海市",
+    "no_msg": 0,
+    "phone": "18306296150",
+    "username": "18306296150",
+    "real_name": "JeanX1",
+    "avatar": "https://pic3.zhimg.com/80/v2-47fabe4ce7be6f986ddf0535cbe4b747_720w.jpg",
+    "status": 1
+  },
+  "message": "登录成功"
+}

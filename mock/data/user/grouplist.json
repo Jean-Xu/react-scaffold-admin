@@ -1,0 +1,22 @@
+{
+    "errorCode": 0,
+    "message": "\u67e5\u8be2\u6210\u529f",
+    "data": [
+        {
+            "id": "4",
+            "jurisdiction_name": "\u7ba1\u7406\u5458\u6743\u9650\uff08\u955c\u7535\uff09"
+        },
+        {
+            "id": "7",
+            "jurisdiction_name": "\u8bb8-\u6d4b\u8bd5\u6743\u9650\u7ec4"
+        },
+        {
+            "id": "11",
+            "jurisdiction_name": "\u8bb8-\u6d4b\u8bd5\u5355\u72ec\u5e7f\u544a\u6743\u9650"
+        },
+        {
+            "id": "15",
+            "jurisdiction_name": "\u8fd0\u8425"
+        }
+    ]
+}

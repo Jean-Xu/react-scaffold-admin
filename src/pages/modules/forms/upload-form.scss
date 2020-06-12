@@ -1,0 +1,32 @@
+// -------------------------------------------------------
+// 上传文件
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.upload-form-page {
+  .upload-form {
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
+
+    .btn-upload {
+      margin-top: 20px;
+    }
+
+    .upload-form-group {
+      padding-top: $spacing-lg;
+      padding-bottom: $spacing-lg;
+      border-bottom: 1px solid $border-color;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}

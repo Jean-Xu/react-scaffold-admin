@@ -1,0 +1,9 @@
+// -------------------------------------------------------
+// 背景图片cover
+// -------------------------------------------------------
+
+@mixin bg-cover($type: cover, $pos: center) {
+  background-repeat: no-repeat;
+  background-position: $pos;
+  background-size: $type;
+}

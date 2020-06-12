@@ -1,0 +1,15 @@
+// -------------------------------------------------------
+// 下拉框使用的小三角
+// -------------------------------------------------------
+
+@mixin select-triangle() {
+  position: absolute;
+  left: 36px;
+  top: -6px;
+  content: '';
+  width: 14px;
+  height: 6px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAASCAMAAAAaNLypAAAA1VBMVEX////g4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4OD////h4eH+/v7i4uLj4+Pm5ubo6Ojp6ens7Ozt7e3w8PDx8fHz8/P09PT19fX39/f4+Pj6+vr7+/v8/Pz9/f3k5OTl5eU0loFZAAAAL3RSTlMAAQMGCwwRGBohKy02QkNFRlFSX2BygZCUoqOvs7S/wMnKzM3X3+Hp7vDx9vn9/tD8lCMAAADdSURBVHhejdLVcgJBFADRwTUeJIE4liB9Zw13+f9PCrWVSiHDwnnux1YG4UIhrC4SLUEpekmZeAf4SJwv01V81fS58qoBejTS0LgOLh9aYE9Fpja0HgPCUL4D67lszdfQyYdOlZEnwF2Kb+kCzxFzGX8Fupb8sbrAW9xUpipAX3b0gUrquMzWgaHsGQL17GF51wQ9kQMTDc37/TLXBmcmR2YOtHO7fxSBzUIMFhug+H9PrAx4KzFaecBLTPmSn0DPkhOsHvCVVFuZGjCQAAOgllHq5hv0WAKNNfzc/gI9lUd/HryCHAAAAABJRU5ErkJggg==") no-repeat top center;
+  background-size: 100% auto;
+  overflow: hidden;
+}

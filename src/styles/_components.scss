@@ -1,0 +1,77 @@
+// -------------------------------------------------------
+// 公用组件样式
+// @description 描述
+// 目录：
+// webfonts
+// -------------------------------------------------------
+
+@import "variables";
+@import "mixins";
+
+// -------------------------------------------------------
+// webfonts
+// @description woff2, woff, ttf就基本支持现代大多数浏览器
+// -------------------------------------------------------
+
+@mixin font-normal() {
+  font-style: normal;
+  font-weight: normal;
+}
+
+// Gotham
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../assets/fonts/Gotham/Gotham-Light.woff2') format('woff2'),  // Modern Browsers
+  url('../assets/fonts/Gotham/Gotham-Light.woff') format('woff'),
+  url('../assets/fonts/Gotham/Gotham-Light.ttf') format('truetype'); // Safari, Android, iOS
+  @include font-normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../assets/fonts/Gotham/Gotham-Medium.woff2') format('woff2'),
+  url('../assets/fonts/Gotham/Gotham-Medium.woff') format('woff'),
+  url('../assets/fonts/Gotham/Gotham-Medium.ttf') format('truetype');
+  @include font-normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../assets/fonts/Gotham/Gotham-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Gotham/Gotham-Bold.woff') format('woff'),
+  url('../assets/fonts/Gotham/Gotham-Bold.ttf') format('truetype');
+  @include font-normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('../assets/fonts/Gotham/Gotham-Black.woff2') format('woff2'),
+  url('../assets/fonts/Gotham/Gotham-Black.woff') format('woff'),
+  url('../assets/fonts/Gotham/Gotham-Black.ttf') format('truetype');
+  @include font-normal;
+}
+
+// Din
+@font-face {
+  font-family: 'DIN-Light';
+  src: url('../assets/fonts/DIN/DIN-Light.woff2') format('woff2'),
+  url('../assets/fonts/DIN/DIN-Light.woff') format('woff'),
+  url('../assets/fonts/DIN/DIN-Light.ttf') format('truetype');
+  @include font-normal;
+}
+
+@font-face {
+  font-family: 'DIN-Medium';
+  src: url('../assets/fonts/DIN/DIN-Medium.woff2') format('woff2'),
+  url('../assets/fonts/DIN/DIN-Medium.woff') format('woff'),
+  url('../assets/fonts/DIN/DIN-Medium.ttf') format('truetype');
+  @include font-normal;
+}
+
+@font-face {
+  font-family: 'DIN-Bold';
+  src: url('../assets/fonts/DIN/DIN-Bold.woff2') format('woff2'),
+  url('../assets/fonts/DIN/DIN-Bold.woff') format('woff'),
+  url('../assets/fonts/DIN/DIN-Bold.ttf') format('truetype');
+  @include font-normal;
+}

@@ -1,0 +1,8 @@
+// -------------------------------------------------------
+// 图片高亮滤镜
+// -------------------------------------------------------
+
+@mixin img-light-filter($brightness: 1.1, $saturate: 1.1, $opacity: 0.9) {
+  -webkit-filter: brightness($brightness) saturate($saturate);
+  opacity: $opacity;
+}

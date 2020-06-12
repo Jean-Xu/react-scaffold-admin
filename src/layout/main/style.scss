@@ -1,0 +1,70 @@
+// -------------------------------------------------------
+// 主体结构
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.main-site {
+  height: 100%;
+
+  .main-sider {
+    .sider-hd {
+      height: $main-header-height; // 必须设置
+      padding-left: $spacing-lg;
+
+      // 可换成Logo图片
+      .logo {
+        font-size: 23px;
+        font-family: $font-din-medium;
+        line-height: $main-header-height;
+        color: rgba(#fff, .45);
+      }
+    }
+
+    .sider-bd {}
+  }
+
+  .main-header {
+    position: relative;
+    z-index: 2;
+    padding: 0 $spacing-lg;
+    background: #ffffff;
+    @include shadow(0.1, 3, $bg-dark);
+
+    .breadcrumbs-site {
+      display: flex;
+      align-items: center;
+      height: $main-header-height;
+
+      .breadcrumbs {
+        font-size: 16px;
+      }
+    }
+
+    .user-info {
+      height: $main-header-height;
+      padding-top: ($main-header-height - 32px) / 2;
+
+      .avatar {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .realname {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 32px;
+        margin-left: 10px;
+      }
+    }
+
+    .btn-exit {
+      margin-top: ($main-header-height - 24px) / 2;
+      margin-left: 20px;
+    }
+  }
+
+  .main-content {}
+}

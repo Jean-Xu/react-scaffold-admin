@@ -1,0 +1,13 @@
+// -------------------------------------------------------
+// 线性渐变
+// -------------------------------------------------------
+
+@mixin linear-gradient($direction: right, $color-1: #198ded, $color-2: #13d1e7, $color-average: mix($color-1, $color-2)) {
+  @if (type_of($direction) == number) {
+    background: $color-average;
+    background: linear-gradient($direction, $color-1, $color-2);
+  } @else {
+    background: $color-average;
+    background: linear-gradient(to #{$direction}, $color-1, $color-2);
+  }
+}

@@ -1,0 +1,14 @@
+// -------------------------------------------------------
+// 基础表单
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.base-form-page {
+  .base-form {
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
+  }
+}

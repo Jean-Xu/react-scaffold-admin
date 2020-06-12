@@ -1,0 +1,117 @@
+{
+  "errorCode": 0,
+  "message": "\u67e5\u8be2\u6210\u529f",
+  "data": {
+    "info": [
+      {
+        "admin_id": "25",
+        "jurisdiction_id": "15",
+        "real_name": "\u6d4b\u8bd5",
+        "username": "18010000000",
+        "phone": "15210014963",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "24",
+        "jurisdiction_id": "4",
+        "real_name": "cjx",
+        "username": "18761721355",
+        "phone": "18761721355",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "23",
+        "jurisdiction_id": "7",
+        "real_name": "\u79e6\u548f",
+        "username": "13921663123",
+        "phone": "13921663123",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "21",
+        "jurisdiction_id": "4",
+        "real_name": "\u5c0f\u66f9",
+        "username": "15625462323",
+        "phone": "15625462323",
+        "identity": "2",
+        "status": "2"
+      },
+      {
+        "admin_id": "18",
+        "jurisdiction_id": "4",
+        "real_name": "PM\u66f9",
+        "username": "13186995681",
+        "phone": "13186995681",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "13",
+        "jurisdiction_id": "4",
+        "real_name": "\u8fd0\u8425",
+        "username": "15000000000",
+        "phone": "15000000000",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "10",
+        "jurisdiction_id": "11",
+        "real_name": "\u5c0f\u8bb8",
+        "username": "18306296150",
+        "phone": "18306296150",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "4",
+        "jurisdiction_id": "4",
+        "real_name": "\u5468\u7476",
+        "username": "15151361997",
+        "phone": "15151361997",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "3",
+        "jurisdiction_id": "4",
+        "real_name": "\u5b59\u9759",
+        "username": "13186995680",
+        "phone": "13186995680",
+        "identity": "2",
+        "status": "1"
+      },
+      {
+        "admin_id": "2",
+        "jurisdiction_id": "4",
+        "real_name": "\u5c0f\u66f9",
+        "username": "13186995560",
+        "phone": "13186995560",
+        "identity": "2",
+        "status": "2"
+      },
+      {
+        "admin_id": "1",
+        "jurisdiction_id": null,
+        "real_name": "admin",
+        "username": "master",
+        "phone": "18306296150",
+        "identity": "1",
+        "status": "1"
+      }
+    ],
+    "page": {
+      "current_page": "1",
+      "first_page": 1,
+      "prev_page": 0,
+      "next_page": 2,
+      "last_page": 1,
+      "total_page": 1,
+      "total_count": "11",
+      "page_size": "15"
+    }
+  }
+}

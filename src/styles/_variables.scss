@@ -1,0 +1,54 @@
+// -------------------------------------------------------
+// 自定义scss变量
+// @description 描述
+// -------------------------------------------------------
+
+// color
+$brand-main-color:            #6251dd;
+$brand-second-color:          #2c8aff;
+$brand-third-color:           #6bc44b;
+$brand-fourth-color:          #f79824;
+$brand-fifth-color:           #ff696d;
+$brand-sixth-color:           #c46ddc;
+$text-dark:                   #333;
+$text-gray:                   #909090;
+$placeholder-color:           #707070;
+$border-color:                #e0e0e0;
+$border-color-light:          #eaeaea;
+$input-border-color:          #ddd;
+$bg-base:                     #f6f6ff;
+$bg-dark:                     #001529;
+
+// transition
+$transition-normal:           all .2s ease-out;
+$transition-input:            all .2s cubic-bezier(.645, .045, .355, 1);
+
+// font
+$font-base:                   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-code:                   SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-gotham-light:           'Gotham-Light';
+$font-gotham-medium:          'Gotham-Medium';
+$font-gotham-bold:            'Gotham-Bold';
+$font-gotham-black:           'Gotham-Black';
+$font-din-light:              'DIN-Light';
+$font-din-medium:             'DIN-Medium';
+$font-din-bold:               'DIN-Bold';
+
+// size
+$main-header-height:          68px;
+$input-normal-width:          360px;
+$spacing-lg:                  24px;
+
+// 图标base64
+// https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=19238
+$icon-close-white-sm:         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAtElEQVQ4jaXVbQ6DMAgG4LLz2vNsXszj+Bo2mjQKFJhJfwjlSe2XDQC3DcAbAMl7tpHUs9M40AGc+D2fAkxSB3G2NgVQgEmrH4m9AGsgOzR3yMAmOOY0C7vgHY3AS1BDPfilxB+ghVrwEQE91IKX4Apt8sn3ER4SN+uqI3X38T9zasJRcDdWX4WjIDn5B5wBwycvC4b6V8AlzMnlWU7C3/t0vvkzoAaz00eC4cqvZIa5vgNoFw7Au9URNpGKAAAAAElFTkSuQmCC";
+$icon-qrcode:                 "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxwYXRoIGQ9Ik04NS4zMTIgODUuMzEyVjM4NEgzODRWODUuMzEySDg1LjMxMnpNMCAwaDQ2OS4yNDh2NDY5LjI0OEgwVjB6bTE3MC42MjQgMTcwLjYyNGgxMjh2MTI4aC0xMjh2LTEyOHpNMCA1NTQuNjI0aDQ2OS4yNDh2NDY5LjI0OEgwVjU1NC42MjR6bTg1LjMxMiA4NS4zMTJWOTM4LjU2SDM4NFY2MzkuOTM2SDg1LjMxMnptODUuMzEyIDg1LjMxMmgxMjh2MTI4aC0xMjh2LTEyOHpNNTU0LjYyNCAwaDQ2OS4yNDh2NDY5LjI0OEg1NTQuNjI0VjB6bTg1LjMxMiA4NS4zMTJWMzg0SDkzOC41NlY4NS4zMTJINjM5LjkzNnptMzgzLjkzNiA2ODIuNTZoLjEyOHY4NS4zNzZINzI1LjI0OFY2MzkuOTM2aC04NS4zMTJ2MzgzLjkzNmgtODUuMzEyVjU1NC42MjRIODEwLjU2djIxMy4yNDhoMTI4VjU1NC42MjRoODUuMzEydjIxMy4yNDh6TTcyNS4yNDggMTcwLjYyNGgxMjh2MTI4aC0xMjh2LTEyOHptMjk4LjYyNCA4NTMuMjQ4SDkzOC41NlY5MzguNTZoODUuMzEydjg1LjMxMnptLTIxMy4zMTIgMGgtODUuMzEyVjkzOC41Nmg4NS4zMTJ2ODUuMzEyeiIgZmlsbD0iIzUxN0NGRiIvPjwvc3ZnPg==";
+$icon-dustbin:                "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zLjUgMy41VjEzQTEuNSAxLjUgMCAwIDAgNSAxNC41aDZhMS41IDEuNSAwIDAgMCAxLjUtMS41VjMuNWgtOXoiIHN0cm9rZT0iIzg4OCIvPjxwYXRoIGQ9Ik0xIDMuNWgxNCIgc3Ryb2tlPSIjODg4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNNS41NTggMkM1LjI1IDIgNSAxLjc3NiA1IDEuNXMuMjUtLjUuNTU4LS41aDQuODg0Yy4zMDggMCAuNTU4LjIyNC41NTguNXMtLjI1LjUtLjU1OC41SDUuNTU4ek02IDcuNWEuNS41IDAgMCAxIDEgMHYzYS41LjUgMCAwIDEtMSAwdi0zek05IDcuNWEuNS41IDAgMCAxIDEgMHYzYS41LjUgMCAwIDEtMSAwdi0zeiIgZmlsbD0iIzg4OCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg==";
+
+// media
+$sc-xs:                       576px;  // max-width <576的情况
+$sc-sm:                       576px;  // min-width >=576
+$sc-md:                       768px;  // min-width >=768
+$sc-lg:                       992px;  // min-width >=992
+$sc-xl:                       1200px; // min-width >=1200
+$sc-xxl:                      1600px; // min-width >=1600

@@ -1,0 +1,28 @@
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity .6s cubic-bezier(0.4, 0.01, 0.165, 0.99), transform .6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+.fade-enter-active {
+  transition: opacity .6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}

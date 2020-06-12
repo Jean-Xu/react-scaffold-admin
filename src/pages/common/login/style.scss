@@ -1,0 +1,167 @@
+// -------------------------------------------------------
+// 登陆页
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.entry-container.login-page {
+  //@include linear-gradient(bottom, #e3e5ff, #b5c7ff);
+  background: url("../../../assets/images/bg-login.jpg") no-repeat center;
+  background-size: cover;
+
+  .copyright {
+    position: absolute;
+    left: 0;
+    bottom: 26px;
+    width: 100%;
+    color: rgba(#fff, .75);
+    text-align: center;
+
+    .icon-copyright {
+      font-size: 13px;
+    }
+  }
+}
+
+.login-box {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 410px;
+  padding: 35px 43px 50px;
+  background: #ffffff;
+  border-radius: 4px;
+  @include shadow(0.5, 4, $brand-main-color);
+  //box-shadow: 0 20px 25px -5px rgba(darken($brand-main-color, 10%), 0.1), 0 10px 10px -5px rgba(darken($brand-main-color, 10%), 0.04);
+  transform: translate(-50%, -50%);
+
+  .logo {
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-family: $font-din-bold;
+    text-align: center;
+    color: lighten(#594ed7, 20%);
+  }
+
+  @at-root .login-form {
+    .form-group {
+      &:nth-of-type(1) {
+        margin-bottom: 25px;
+      }
+    }
+
+    .form-control {
+      .ant-input-prefix {
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      // background-size: 19px auto;
+      // background-repeat: no-repeat;
+      // background-position: 7px 9px;
+
+      // &.account {
+      //   padding-left: 32px;
+      //   background-image: url("../../../assets/images/icon-username.png");
+      // }
+
+      // &.password {
+      //   background-image: url("../../../assets/images/icon-lock.png");
+
+      //   .ant-input {
+      //     padding-left: 21px;
+      //     background: rgba(#fff, 0);
+      //   }
+      // }
+
+      &.has-rc {
+        .ant-input {
+          padding-right: 25px;
+        }
+      }
+    }
+
+    .form-opts {
+      margin: 16px 0;
+      line-height: 22px;
+
+      .remember {
+        color: $text-gray;
+        cursor: pointer;
+
+        &::selection {
+          background: #fff;
+          color: $text-gray;
+        }
+
+        &::-moz-selection {
+          background: #fff;
+          color: $text-gray;
+        }
+
+        i {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 14px;
+          height: 14px;
+          margin-top: (22px - 14px) / 2;
+          margin-right: 6px;
+          border: 1px solid #b5b5b5;
+          border-radius: 2px;
+
+          &:before,
+          &:after {
+            position: absolute;
+            content: '';
+          }
+        }
+
+        &:hover {
+          i {
+            border-color: #9a9a9a;
+          }
+        }
+
+        &.selected {
+          i {
+            &:before {
+              top: -1px;
+              right: -1px;
+              width: 4px;
+              height: 7px;
+              background: #fff;
+            }
+
+            &:after {
+              left: 1px;
+              top: 0;
+              z-index: 3;
+              width: 14px;
+              height: 9px;
+              background: url("../../../assets/images/remember-hook.png") no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+      }
+
+      .forget {
+        color: $text-gray;
+
+        &:hover {
+          color: $brand-second-color;
+        }
+      }
+    }
+
+    .btn-login {
+      height: 42px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}
+

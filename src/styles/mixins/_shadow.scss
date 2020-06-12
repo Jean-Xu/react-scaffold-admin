@@ -1,0 +1,28 @@
+// -------------------------------------------------------
+// 设置 box-shadow
+// -------------------------------------------------------
+
+@mixin shadow($r: 0.65, $depth: 2, $color: #000) {
+  @if ($depth == 1) {
+    box-shadow: 0 2px 2px 0 rgba(red($color), green($color), blue($color), (0.14 * $r)),
+                0 1px 5px 0 rgba(red($color), green($color), blue($color), (0.12 * $r)),
+                0 3px 1px -2px rgba(red($color), green($color), blue($color), (0.2 * $r));
+  } @else if ($depth == 2) {
+    box-shadow: 0 4px 5px 0 rgba(red($color), green($color), blue($color), (0.14 * $r)),
+                0 1px 10px 0 rgba(red($color), green($color), blue($color), (0.12 * $r)),
+                0 2px 4px -1px rgba(red($color), green($color), blue($color), (0.3 * $r));
+  } @else if ($depth == 3) {
+    box-shadow: 0 6px 10px 0 rgba(red($color), green($color), blue($color), (0.14 * $r)),
+                0 1px 18px 0 rgba(red($color), green($color), blue($color), (0.12 * $r)),
+                0 3px 5px -1px rgba(red($color), green($color), blue($color), (0.3 * $r));
+  } @else if ($depth == 4) {
+    box-shadow: 0 8px 10px 1px rgba(red($color), green($color), blue($color), (0.14 * $r)),
+                0 3px 14px 2px rgba(red($color), green($color), blue($color), (0.12 * $r)),
+                0 5px 5px -3px rgba(red($color), green($color), blue($color), (0.3 * $r));
+  } @else {
+    // $depth == 2
+    box-shadow: 0 4px 5px 0 rgba(red($color), green($color), blue($color), (0.14 * $r)),
+                0 1px 10px 0 rgba(red($color), green($color), blue($color), (0.12 * $r)),
+                0 2px 4px -1px rgba(red($color), green($color), blue($color), (0.3 * $r));
+  }
+}

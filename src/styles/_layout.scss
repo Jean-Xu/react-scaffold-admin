@@ -1,0 +1,147 @@
+// -------------------------------------------------------
+// 公用布局
+// @description 描述
+// 目录：
+// 工具类
+// 模块
+// -------------------------------------------------------
+
+@import "variables";
+@import "mixins";
+
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+// -------------------------------------------------------
+// 工具类
+// -------------------------------------------------------
+
+.text-ellipsis {
+  @include ellipsis;
+}
+
+.paragraph-ellipsis {
+  @include phase-ellipsis(1)
+}
+
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.fx {
+  display: flex;
+}
+
+.fx-row {
+  flex-direction: row;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-hc { // row时 相对y轴水平居中
+  justify-content: center;
+}
+.fx-vc { // row时 相对x轴垂直居中
+  align-items: center;
+}
+
+.fx-hb { // 子元素位于两端
+  justify-content: space-between;
+}
+
+.fx-auto {
+  flex: 1;
+}
+
+.fx-ai-end { // align-items: flex-end 底部对齐
+  align-items: flex-end;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+
+// -------------------------------------------------------
+// 模块
+// -------------------------------------------------------
+
+// 入口页
+.entry-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+// 模块页
+.page-container {
+  margin: $spacing-lg;
+  background: #ffffff;
+  @include shadow(0.1, 3, $bg-dark);
+
+  .page-title {
+    padding-top: $spacing-lg;
+    padding-left: $spacing-lg;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  .page-desc {
+    margin-top: 12px;
+    padding-left: $spacing-lg;
+    line-height: 1.5;
+  }
+}
+
+// 页面局部
+.mod {
+  .mod-hd {
+    .title {}
+  }
+
+  .mod-bd {}
+}
