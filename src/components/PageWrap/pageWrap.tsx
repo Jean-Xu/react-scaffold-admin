@@ -18,7 +18,7 @@ const PageWrap: React.FC<PageWrapProps> = (props) => {
   const { fullHeight } = useContext(SizeContext)
 
   const [ isMounted, setIsMounted ] = useState(false)
-  const [ wrapHeight, setWrapHeight ] = useState()
+  const [ wrapHeight, setWrapHeight ] = useState<number>()
 
   const classes = classNames('page-wrap', className, {
     'fade-in': isMounted

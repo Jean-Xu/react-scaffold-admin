@@ -1,10 +1,10 @@
-import React, {useEffect, useContext, useState} from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import PageWrap from '../../../components/PageWrap/pageWrap'
 import { SizeContext } from '../../../layout/main/main'
 
 const Home: React.FC = () => {
   const { fullHeight } = useContext(SizeContext)
-  const [ pageConHeight, setPageConHeight ] = useState()
+  const [ pageConHeight, setPageConHeight ] = useState<number>()
 
   useEffect(() => {
     const headerHeight = document.querySelector('.main-header')?.clientHeight || 0
