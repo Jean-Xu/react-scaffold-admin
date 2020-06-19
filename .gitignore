@@ -26,3 +26,4 @@ yarn-error.log*
 .idea
 *.zip
 说明.txt
+build
