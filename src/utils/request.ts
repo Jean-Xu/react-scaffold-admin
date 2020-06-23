@@ -40,7 +40,7 @@ const CancelToken = axios.CancelToken
 
 // get请求
 export function requestGet(url: string, data?: any, logoutCb?: Function) {
-  let cancelFunc = null
+  let cancelFunc = undefined
 
   const pro = service({
     url,
@@ -61,7 +61,7 @@ export function requestGet(url: string, data?: any, logoutCb?: Function) {
 
 // post请求
 export function requestPost(url: string, data?: any, logoutCb?: Function) {
-  let cancelFunc = null
+  let cancelFunc = undefined
 
   const pro = service({
     url,
@@ -87,7 +87,7 @@ export function requestUpload(
   onProgress?: OnProgressFnType,
   logoutCb?: Function
 ) {
-  let cancelFunc = null
+  let cancelFunc = undefined
   const { file, ...restData } = data
 
   const formData = new FormData()

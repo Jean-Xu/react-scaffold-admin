@@ -7,7 +7,7 @@
     "@loadable/component": "^5.12.0",
     "@types/react-custom-scrollbars": "^4.0.6",
     "animate.css": "^4.1.0",
-    "antd": "^4.2.2",
+    "antd": "^4.3.4",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "good-storage": "^1.1.1",

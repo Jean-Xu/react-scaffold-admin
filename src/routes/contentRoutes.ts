@@ -39,6 +39,16 @@ const contentRoutes: RouteType[] = [
     authority: ['10102'],
     component: loadable(() => import('../pages/modules/forms/uploadForm')),
   },
+  {
+    path: `${CONTENT_ROUTE_PATH}/base-list`,
+    exact: true,
+    name: 'baseList',
+    mark: 'baseList',
+    title: '基础列表',
+    level: 2,
+    authority: ['10201'],
+    component: loadable(() => import('../pages/modules/list/baseList')),
+  },
   /*{
     path: `${CONTENT_ROUTE_PATH}/bguser`,
     exact: true,

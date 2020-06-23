@@ -28,5 +28,16 @@
         border-bottom: none;
       }
     }
+
+    .upload-dragger {
+      .icon-dragger {
+        font-size: 52px;
+        color: $brand-main-color;
+      }
+
+      .text-guide {
+        padding: 15px 15px 0;
+      }
+    }
   }
 }

@@ -23,8 +23,12 @@
   @include ellipsis;
 }
 
-.paragraph-ellipsis {
-  @include phase-ellipsis(1)
+.phase-ellipsis-3 {
+  @include phase-ellipsis(3);
+}
+
+.hide {
+  display: none !important;
 }
 
 .posr {

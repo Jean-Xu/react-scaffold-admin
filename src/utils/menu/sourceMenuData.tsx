@@ -6,7 +6,7 @@
  */
 
 import React from 'react'
-import { HomeOutlined, EditOutlined } from '@ant-design/icons'
+import { HomeOutlined, EditOutlined, UnorderedListOutlined } from '@ant-design/icons'
 import { Base64 } from 'js-base64'
 import { CONTENT_ROUTE_PATH } from '../constant'
 
@@ -44,6 +44,14 @@ export default {
       authority: ['10102'],
       parentId: Base64.encode('表单页'),
       parentIcon: <EditOutlined />
+    },
+    {
+      id: Base64.encode('基础列表'),
+      path: `${CONTENT_ROUTE_PATH}/base-list`,
+      mark: 'baseList',
+      authority: ['10201'],
+      parentId: null,
+      icon: <UnorderedListOutlined />
     },
     /*{
       id: Base64.encode('后台用户管理'),
