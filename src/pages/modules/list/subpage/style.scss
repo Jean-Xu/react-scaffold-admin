@@ -1,0 +1,27 @@
+// -------------------------------------------------------
+// 子列表页
+// @description 书籍测试列表
+// -------------------------------------------------------
+
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.list-subpage {
+  padding: 0;
+}
+
+.book-list {
+  .book-cover {
+    width: 70px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .book-extract {
+    @include phase-ellipsis(3);
+    max-height: (14px * 1.5 * 3);
+  }
+}

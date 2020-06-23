@@ -1,6 +1,13 @@
+/**
+ * -------------------------------------------------------
+ * 页面wrap
+ * @description 不要使用react-custom-scrollbars
+ * 会有滚动条一开始不渲染 滚动时才渲染的bug
+ * -------------------------------------------------------
+ */
+
 import React, { useState, useEffect, useContext } from 'react'
 import { useLocation } from 'react-router-dom'
-import Scrollbars from 'react-custom-scrollbars'
 import classNames from 'classnames'
 import { SizeContext } from '../../layout/main/main'
 
@@ -18,7 +25,7 @@ const PageWrap: React.FC<PageWrapProps> = (props) => {
   const { fullHeight } = useContext(SizeContext)
 
   const [ isMounted, setIsMounted ] = useState(false)
-  const [ wrapHeight, setWrapHeight ] = useState<number>()
+  const [ wrapHeight, setWrapHeight ] = useState('')
 
   const classes = classNames('page-wrap', className, {
     'fade-in': isMounted
@@ -42,15 +49,13 @@ const PageWrap: React.FC<PageWrapProps> = (props) => {
   useEffect(() => {
     if (isHeightOpen) {
       const headerHeight = document.querySelector('.main-header')?.clientHeight || 0
-      setWrapHeight(fullHeight - headerHeight)
+      setWrapHeight(fullHeight - headerHeight + 'px')
     }
   }, [fullHeight])
 
   return (
     <div className={classes} style={{ height: wrapHeight }}>
-      <Scrollbars style={{ width: '100%', height: wrapHeight }}>
-        {children}
-      </Scrollbars>
+      {children}
     </div>
   )
 }

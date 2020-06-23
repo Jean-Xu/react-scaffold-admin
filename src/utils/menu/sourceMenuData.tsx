@@ -46,10 +46,10 @@ export default {
       parentIcon: <EditOutlined />
     },
     {
-      id: Base64.encode('基础列表'),
-      path: `${CONTENT_ROUTE_PATH}/base-list`,
-      mark: 'baseList',
-      authority: ['10201'],
+      id: Base64.encode('列表页'),
+      path: `${CONTENT_ROUTE_PATH}/list`,
+      mark: 'list',
+      authority: ['10200'],
       parentId: null,
       icon: <UnorderedListOutlined />
     },

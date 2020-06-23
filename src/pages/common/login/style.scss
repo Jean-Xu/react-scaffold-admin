@@ -10,19 +10,6 @@
   //@include linear-gradient(bottom, #e3e5ff, #b5c7ff);
   background: url("../../../assets/images/bg-login.jpg") no-repeat center;
   background-size: cover;
-
-  .copyright {
-    position: absolute;
-    left: 0;
-    bottom: 26px;
-    width: 100%;
-    color: rgba(#fff, .75);
-    text-align: center;
-
-    .icon-copyright {
-      font-size: 13px;
-    }
-  }
 }
 
 .login-box {

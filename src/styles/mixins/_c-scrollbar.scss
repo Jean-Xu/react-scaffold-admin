@@ -2,7 +2,7 @@
 // 自定义美化滚动条
 // -------------------------------------------------------
 
-@mixin c-scrollbar() {
+@mixin c-scrollbar($size: 8px) {
   // 滚动条凹槽的颜色，还可以设置边框属性
   &::-webkit-scrollbar-track-piece {
     background-color: rgba(#fff, 0);
@@ -10,19 +10,19 @@
 
   // 滚动条的宽度
   &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: $size;
+    height: $size;
   }
 
   // 滚动条的设置
   &::-webkit-scrollbar-thumb {
-    background-color: #dddee0;
+    background-color: rgba(#000, .22);
     background-clip: padding-box;
-    min-height: 20px;
-    border-radius: 4px;
+    min-height: $size * 2;
+    border-radius: $size / 2;
 
     &:hover {
-      background-color: #c7c9cc;
+      background-color: rgba(#000, .33);
     }
   }
 }

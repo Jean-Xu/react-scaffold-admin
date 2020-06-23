@@ -1,0 +1,28 @@
+// -------------------------------------------------------
+// 底部版权
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.copyright {
+  position: absolute;
+  left: 0;
+  bottom: 26px;
+  width: 100%;
+  color: rgba(#fff, .75);
+  text-align: center;
+
+  &.dark {
+    color: $text-dark;
+  }
+
+  &.light {
+    color: rgba(#fff, .75);
+  }
+
+  .icon-copyright {
+    font-size: 13px;
+  }
+}

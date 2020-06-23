@@ -1,28 +1,111 @@
-.fade-enter {
-  opacity: 0;
-  transform: translateX(-100%);
+// -------------------------------------------------------
+// 404页
+// @description 描述
+// -------------------------------------------------------
+
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+$_base-size: 150px;
+
+@keyframes error404-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(-60deg);
+  }
+  40% {
+    transform: rotateZ(-10deg);
+  }
+  60% {
+    transform: rotateZ(50deg);
+  }
+  80% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }
 
-.fade-enter-active {
-  opacity: 1;
-  transform: translateX(0%);
+.entry-container.404-page {}
+
+.error-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
-.fade-exit {
-  opacity: 1;
-  transform: translateX(0%);
+.error-box-hd {
+  font-size: 0;
+
+  .number-4 {
+    display: inline-block;
+    vertical-align: top;
+    width: $_base-size;
+    height: $_base-size;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTUgMTE1Ij48cGF0aCBkPSJNODYgNjlWNUg2My45TDE0IDY5bDQuOSAyMkg2NHYxOWgyMlY5MWgxNlY2OUg4NnptLTQzLjkgMEw2NCA0MC43VjY5SDQyLjF6IiBmaWxsPSIjNGI0YjRkIi8+PC9zdmc+") no-repeat center;
+    background-size: 100% auto;
+    opacity: 0.95;
+  }
+
+  .number-navigation {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: $_base-size;
+    height: $_base-size;
+    margin: 0 1px 0 6px;
+    @include linear-gradient(135deg, #fff, $bg-base);
+    border-radius: 22px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, (0.1 * 2.5)), 0 10px 10px -5px rgba(0, 0, 0, (0.04 * 2.5));
+  }
+
+  .number-navigation-c1 {
+    $_c1-size: 130px;
+    width: $_c1-size;
+    height: $_c1-size;
+    margin: (($_base-size - $_c1-size) / 2) 0 0 (($_base-size - $_c1-size) / 2);
+    background: url("../../../assets/images/404nav-board.png") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .number-navigation-pointer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 76px;
+    margin: -38px 0 0 -8px;
+    background: url("../../../assets/images/404nav-pointer.png") no-repeat center;
+    background-size: 100% auto;
+    animation: error404-animation 3s ease 0s infinite alternate;
+  }
 }
 
-.fade-exit-active {
-  opacity: 0;
-  transform: translateX(100%);
-}
+.error-box-bd {
+  margin-top: 70px;
 
-.fade-enter-active,
-.fade-exit-active {
-  transition: opacity .6s cubic-bezier(0.4, 0.01, 0.165, 0.99), transform .6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-}
+  .error-box-text {
+    margin: 0;
 
-.fade-enter-active {
-  transition: opacity .6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    &:nth-of-type(1) {
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 23px;
+
+      .btn-link {
+        margin-left: 0.5rem;
+        padding: 0;
+        font-size: 23px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      font: 19px $font-din-light;
+    }
+  }
 }

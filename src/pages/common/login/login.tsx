@@ -6,13 +6,14 @@
  */
 
 import React, { useState, useEffect, ChangeEvent } from 'react'
-import { Link, useLocation, useHistory } from 'react-router-dom'
+import { useLocation, useHistory } from 'react-router-dom'
 import { useObserver } from 'mobx-react'
-import { Button, Input, Select, message } from 'antd'
+import { Button, Input, message } from 'antd'
 import { ContactsTwoTone, LockTwoTone, CopyrightCircleOutlined } from '@ant-design/icons'
 import classNames from 'classnames'
 import useStores from '../../../hooks/useStores'
 import { CONTENT_ROUTE_PATH } from '../../../utils/constant'
+import Copyright from '../../../components/Copyright/copyright'
 import RecentListSelect from './RecentListSelect/recentListSelect'
 
 import './style.scss'
@@ -135,7 +136,7 @@ const Login: React.FC = () => {
         </div>
 
       </div>
-      <footer className="copyright">Copyright <CopyrightCircleOutlined className="icon-copyright" /> {new Date().getFullYear()} XXX公司 ICP备XX888</footer>
+      <Copyright type="light" />
     </div>
   ))
 }

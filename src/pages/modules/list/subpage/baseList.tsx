@@ -1,9 +1,16 @@
+/**
+ * -------------------------------------------------------
+ * 基础列表
+ * @description 描述
+ * -------------------------------------------------------
+ */
+
 import React, { useState, useEffect, useRef } from 'react'
 import { Table, Tag, Pagination,  message } from 'antd'
-import useRequest from '../../../hooks/useRequest'
-import PageWrap from '../../../components/PageWrap/pageWrap'
+import useRequest from '../../../../hooks/useRequest'
+import PageWrap from '../../../../components/PageWrap/pageWrap'
 
-import './base-list.scss'
+import './style.scss'
 
 interface ListDataType {
   readonly id: string
@@ -90,28 +97,26 @@ const BaseList: React.FC = () => {
   }, [])
 
   return (
-    <PageWrap>
-      <div className="page-container base-list-page">
+    <PageWrap className="list-subpage" isHeightOpen={false}>
 
-        <Table
-          className="book-list"
-          columns={listColumns}
-          dataSource={listData}
-          loading={loading}
-          pagination={false}
+      <Table
+        className="book-list"
+        columns={listColumns}
+        dataSource={listData}
+        loading={loading}
+        pagination={false}
+      />
+
+      {totalPageNum > 0 && (
+        <Pagination
+          defaultCurrent={1}
+          current={currentPageNum}
+          pageSize={8}
+          total={totalPageNum}
+          onChange={onPaginationChange}
         />
+      )}
 
-        {totalPageNum > 0 && (
-          <Pagination
-            defaultCurrent={1}
-            current={currentPageNum}
-            pageSize={8}
-            total={totalPageNum}
-            onChange={onPaginationChange}
-          />
-        )}
-
-      </div>
     </PageWrap>
   )
 }

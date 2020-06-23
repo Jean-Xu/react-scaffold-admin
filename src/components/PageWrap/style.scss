@@ -1,6 +1,7 @@
 .page-wrap {
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
   transition: opacity .5s cubic-bezier(0.4, 0.01, 0.165, 0.99), visibility .4s;
 
   &.fade-in {

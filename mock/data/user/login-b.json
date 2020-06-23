@@ -1,17 +1,5 @@
 {
   "errorCode": 0,
-  "data": {
-    "ID_image": null,
-    "created_at": "2019-07-03 14:59:16",
-    "identity": 3,
-    "jurisdictionid": "20202,20203,20401,20402,20602,21000",
-    "last_login_address": "江苏省南通市",
-    "last_login_time": "2019-12-04 16:43:53",
-    "no_msg": 0,
-    "phone": "18888888888",
-    "username": "18888888888",
-    "real_name": "Mrfront",
-    "status": 1
-  },
+  "data": {},
   "message": "登录成功"
 }
