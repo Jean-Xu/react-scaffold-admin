@@ -5,13 +5,9 @@
  * -------------------------------------------------------
  */
 
-import axios from 'axios'
 import { useHistory } from 'react-router-dom'
-import qs from 'qs'
-import _ from 'lodash'
 import useStores from './useStores'
 import { requestGet, requestPost, requestUpload } from '../utils/request'
-import logError from '../utils/logError'
 import logoutCb from '../utils/logoutCb'
 import { UploadDataType, OnProgressFnType } from '../types/request'
 

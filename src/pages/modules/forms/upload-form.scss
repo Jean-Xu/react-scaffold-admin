@@ -18,7 +18,7 @@
     .upload-form-group {
       padding-top: $spacing-lg;
       padding-bottom: $spacing-lg;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $border-color-light;
 
       &:first-of-type {
         padding-top: 0;
@@ -26,6 +26,11 @@
 
       &:last-of-type {
         border-bottom: none;
+      }
+
+      .title {
+        margin-bottom: 1em;
+        font-size: 18px;
       }
     }
 

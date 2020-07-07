@@ -6,25 +6,21 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react'
-import { Table, Tag, Pagination,  message } from 'antd'
+import { Table, Tag, Pagination, Form, Input, DatePicker, Button, message } from 'antd'
+import moment from 'moment'
+import _ from 'lodash'
 import useRequest from '../../../../hooks/useRequest'
 import PageWrap from '../../../../components/PageWrap/pageWrap'
+import { BaseListDataType } from '../../../../types/list'
 
 import './style.scss'
 
-interface ListDataType {
-  readonly id: string
-  key: string | number
-  cover: string     // 封面图
-  bookName: string  // 书名
-  summary: string   // 摘要
-  author: string    // 作者
-  date: string      // 出版日期
-  creator: string   // 信息创建人
-  status: '1' | '2' // 状态
+interface QueryValuesType {
+  bookName?: string
+  date?: string
 }
 
-// 列
+// 表格列
 const listColumns = [
   { title: '封面', dataIndex: 'cover', key: 'cover', render: (text: string) => (
       <div className="book-cover">
@@ -39,25 +35,30 @@ const listColumns = [
   { title: '出版时间', dataIndex: 'date', key: 'date' },
   { title: '创建人', dataIndex: 'creator', key: 'creator' },
   { title: '状态', dataIndex: 'status', key: 'status', render: (text: string) => (
-      <div>{text === '1' ? <Tag color='success'>正常</Tag> : <Tag>下架</Tag>}</div>
+      <>{text === '1' ? <Tag color='success'>正常</Tag> : <Tag>下架</Tag>}</>
     ) },
 ]
 
 const BaseList: React.FC = () => {
   const request = useRequest()
-  const [ listData, setListData ] = useState<ListDataType[]>()
+  const [ listData, setListData ] = useState<BaseListDataType[]>()
   const [ loading, setLoading ] = useState(true)
   const cancelListFunc = useRef<Function>()
   // 分页
   const [ currentPageNum, setCurrentPageNum ] = useState(1)
   const [ totalPageNum, setTotalPageNum ] = useState(0)
 
+  const [ queryForm ] = Form.useForm()
+
   // 获取列表数据
-  const fetchListData = (page: number = 1, row: number = 8) => {
+  const fetchListData = (page: number = 1, queryValues?: QueryValuesType) => {
     setLoading(true)
     if (cancelListFunc.current) cancelListFunc.current()
 
-    const { pro, cancelFunc } = request.get('/api/book/list', { page, row })
+    let params: any = { page, row: 8 }
+    if (queryValues && _.size(queryValues)) params.queryValues = queryValues
+
+    const { pro, cancelFunc } = request.get('/api/book/list', params)
     cancelListFunc.current = cancelFunc
 
     // @ts-ignore
@@ -92,12 +93,48 @@ const BaseList: React.FC = () => {
     setCurrentPageNum(page)
   }
 
+  // 列表查询
+  const onQueryFinish = (values: any) => {
+    let { bookName, date } = values
+    let queryValues: QueryValuesType = {}
+
+    if (bookName) queryValues.bookName = bookName
+    if (date) queryValues.date = moment(date).format('YYYY-MM-DD')
+
+    fetchListData(1, queryValues)
+  }
+
+  const onQueryReset = () => {
+    fetchListData()
+    setCurrentPageNum(1)
+    queryForm.resetFields()
+  }
+
   useEffect(() => {
     fetchListData()
   }, [])
 
   return (
     <PageWrap className="list-subpage" isHeightOpen={false}>
+
+      <Form className="query-form" form={queryForm} layout="inline" onFinish={onQueryFinish}>
+        <Form.Item name="bookName">
+          <Input placeholder="输入书名" size="middle" autoComplete="off" />
+        </Form.Item>
+        <Form.Item name="date">
+          <DatePicker placeholder="选择出版日期" size="middle" />
+        </Form.Item>
+        <Form.Item>
+          <Button size="middle" htmlType="button" onClick={onQueryReset}>
+            重置
+          </Button>
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" size="middle" htmlType="submit">
+            查询
+          </Button>
+        </Form.Item>
+      </Form>
 
       <Table
         className="book-list"

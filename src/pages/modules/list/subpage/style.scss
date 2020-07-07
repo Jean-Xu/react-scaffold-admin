@@ -8,6 +8,19 @@
 
 .list-subpage {
   padding: 0;
+
+  .query-form {
+    padding-bottom: 16px;
+
+    .ant-input,
+    .ant-picker {
+      width: 175px;
+    }
+  }
+
+  .action-top {
+    padding-bottom: 16px;
+  }
 }
 
 .book-list {
@@ -23,5 +36,16 @@
   .book-extract {
     @include phase-ellipsis(3);
     max-height: (14px * 1.5 * 3);
+  }
+
+  .opt-btn {
+    margin-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

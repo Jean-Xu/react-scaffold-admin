@@ -28,7 +28,8 @@ const PageWrap: React.FC<PageWrapProps> = (props) => {
   const [ wrapHeight, setWrapHeight ] = useState('')
 
   const classes = classNames('page-wrap', className, {
-    'fade-in': isMounted
+    'fade-in': isMounted,
+    'overflow-y-auto': isHeightOpen,
   })
 
   useEffect(() => {

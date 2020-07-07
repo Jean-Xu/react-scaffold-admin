@@ -12,7 +12,6 @@ import { DEV_HOST, HTTP_STATUS_MESSAGE } from './constant'
 
 function logError(error: any): void {
   const hostname = window.location.hostname
-
   if (<AxiosError>error) {
     if (error.response) {
       console.log('[Response Error]', error.response)

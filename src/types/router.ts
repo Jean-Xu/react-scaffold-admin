@@ -1,3 +1,10 @@
+/**
+ * -------------------------------------------------------
+ * 路由相关类型
+ * @description 描述
+ * -------------------------------------------------------
+ */
+
 import { RouteProps } from 'react-router-dom'
 
 export interface RouteType extends RouteProps {

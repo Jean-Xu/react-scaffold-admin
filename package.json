@@ -7,9 +7,10 @@
     "@loadable/component": "^5.12.0",
     "@types/react-custom-scrollbars": "^4.0.6",
     "animate.css": "^4.1.0",
-    "antd": "^4.3.4",
+    "antd": "^4.4.0",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "file-saver": "^2.0.2",
     "good-storage": "^1.1.1",
     "js-base64": "^2.5.2",
     "lodash": "^4.17.15",
@@ -22,7 +23,9 @@
     "react-dom": "^16.13.1",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "react-zmage": "^0.8.5-beta.36",
+    "xlsx": "^0.16.3"
   },
   "scripts": {
     "serve": "cross-env PORT=3600 react-app-rewired start",
@@ -51,6 +54,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/antd": "^1.0.0",
     "@types/classnames": "^2.2.10",
     "@types/good-storage": "^1.1.0",
     "@types/jest": "^24.9.1",

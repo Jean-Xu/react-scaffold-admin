@@ -1,4 +1,9 @@
-import { UploadFile } from 'antd/lib/upload/interface'
+/**
+ * -------------------------------------------------------
+ * 请求相关类型
+ * @description 描述
+ * -------------------------------------------------------
+ */
 
 // 请求返回数据
 export interface ResType {
