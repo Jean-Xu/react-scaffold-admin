@@ -8,7 +8,7 @@
     "@types/react-custom-scrollbars": "^4.0.6",
     "animate.css": "^4.1.0",
     "antd": "^4.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "file-saver": "^2.0.2",
     "good-storage": "^1.1.1",
